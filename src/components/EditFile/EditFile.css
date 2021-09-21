@@ -1,0 +1,73 @@
+.edit-file-blur{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+}
+
+.edit-file-container{
+    background-color: rgb(58, 58, 60);
+    height: 30rem;
+    width: 48rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 22px;
+    border: 1px solid #c5c5c5;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 82%;
+    left: calc((48rem - 82%)/2);
+    top: 13px;
+}
+
+.heading-container > img{
+    width: 45px;
+    margin-right: 1.2rem;
+}
+
+.heading-container > .file-name{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.edit-file-input{
+    position: absolute;
+    width: 83%;
+    height: 60%;
+    top: 86px;
+    left: calc((48rem - 83%)/2);
+}
+
+.edit-file-input > textarea{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(58, 58, 60);
+    border: 2px solid rgb(99, 99, 102);
+    border-radius: 13px;
+    outline: none;
+    color: #ffffff;
+}
+
+.save-file{
+    color: #ffffff;
+    position: absolute;
+    left: calc((48rem - 40%)/2);
+    bottom: 23px;
+    height: 8%;
+    width: 40%;
+    background-color: rgb(58, 58, 60);
+    border: 2px solid rgb(99, 99, 102);
+    border-radius: 20px;
+    cursor: pointer;
+}

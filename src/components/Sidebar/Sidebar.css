@@ -1,0 +1,59 @@
+.sidebar{
+    height: 92%;
+    width: 20%;
+    background-color: #333238;
+    border-radius: 20px;
+    position: relative;
+}
+
+.sidebar__header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.sidebar__logo{
+    height: 65%;
+}
+
+.sidebar__title{
+    margin: 0;
+    color: #ffffff;
+}
+
+.sidebar__folders{ 
+    position: absolute;
+    height: 73%;
+    width: 77%;
+    top: calc((100% - 70%)/2);
+    left: calc((100% - 77%)/2);
+}
+
+.lock-btn{
+    position: absolute;
+    left: calc((100% - 217px)/2);
+    bottom: 21px;
+    height: 38px;
+    width: 217px;
+    border: 1px solid #212121;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.blur-background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: -29px;
+    left: -19px;
+    backdrop-filter: blur(3px);
+}

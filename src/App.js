@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
 import './App.css';
 
+import { structure } from './structure'
+import Sidebar from './components/Sidebar/Sidebar';
+import Main from './components/Main/Main';
+import Header from './components/Header/Header';
+
 function App() {
+  const [breadCrumb, setBreadCrumb] = useState('')
+  const [tree, setTree] = useState(structure);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Sidebar tree={tree} setBreadCrumb={setBreadCrumb} />
+      <div className="container">
+        <Header breadCrumb={breadCrumb} tree={tree} setTree={setTree} />
+        <Main breadCrumb={breadCrumb} tree={tree}/>
+      </div>
     </div>
   );
 }

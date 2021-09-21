@@ -1,0 +1,9 @@
+.MuiList-root{
+    color: rgb(142, 142, 147);
+    background-color: rgb(58, 58, 60);
+    color: white;
+}
+
+.MuiList-root > li:hover{
+    background-color: rgb(131, 131, 133);
+}

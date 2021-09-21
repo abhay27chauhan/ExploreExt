@@ -1,0 +1,17 @@
+.create-modal{
+    width: 90%;
+    left: calc((24rem - 90%)/2);
+}
+
+.create-modal-input{
+    width: 72%;
+}
+
+.modal-blur{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+}

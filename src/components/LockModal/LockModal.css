@@ -1,0 +1,8 @@
+.lock-modal{
+    width: 80%;
+    left: calc((24rem - 80%)/2);
+}
+
+.lock-modal-input{
+    width: 16%;
+}
