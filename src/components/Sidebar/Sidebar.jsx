@@ -6,7 +6,7 @@ import logo from "../../assets/logo.png";
 
 import "./Sidebar.css";
 
-function Sidebar({ tree, setBreadCrumb }) {
+function Sidebar({ tree, setBreadCrumb, active, setActive }) {
   const [open, setOpen] = useState(true);
   const handleClick = () => {
     setOpen(true);
@@ -19,7 +19,7 @@ function Sidebar({ tree, setBreadCrumb }) {
         <h3 className="sidebar__title">ExploreXT</h3>
       </div>
       <div className="sidebar__folders">
-        <Tree data={tree} setBreadCrumb={setBreadCrumb} />
+        <Tree active={active} setActive={setActive} data={tree} setBreadCrumb={setBreadCrumb} />
       </div>
       <div className="lock-btn" onClick={handleClick}>
         Lock

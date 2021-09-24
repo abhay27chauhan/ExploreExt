@@ -9,6 +9,7 @@
 }
 
 .breadcrumbs{
+    cursor: pointer;
     color: #ffffff;
 }
 
@@ -61,4 +62,11 @@
     border: none;
     color: #fdbd40;
     cursor: pointer;
+}
+
+.cross {
+    background-color: rgb(58, 58, 60);
+    color: #ffffff;
+    border: 1px solid rgb(99, 99, 102);
+    font-size: 1.1rem;
 }

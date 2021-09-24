@@ -37,7 +37,9 @@ function CreateModal({ placeholder, btnText, type, breadCrumb, setOpenModal, set
             return newTree;
         }
         const newTree = createFileOrFolder(0, barr, tree)
-        setTree(newTree)
+        if(newTree != undefined){
+            setTree(newTree)
+        }
         setOpenModal(false);
         setData({ placeholder: "", btnText: "", type: "" });
     }

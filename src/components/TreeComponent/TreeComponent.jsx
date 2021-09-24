@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import TreeRecursive from "./TreeRecursive";
 import "./treeComponent.css";
 
-const Tree = ({ data, setBreadCrumb }) => {
-  const [active, setActive] = useState('');
+const Tree = ({ data, setBreadCrumb, active, setActive}) => {
 
   return (
     <div className="tree">
