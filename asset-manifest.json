@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ExploreExt/static/css/main.8ee3111c.chunk.css",
-    "main.js": "/ExploreExt/static/js/main.b2a68ba2.chunk.js",
-    "main.js.map": "/ExploreExt/static/js/main.b2a68ba2.chunk.js.map",
+    "main.css": "/ExploreExt/static/css/main.c454ef6c.chunk.css",
+    "main.js": "/ExploreExt/static/js/main.b2146eca.chunk.js",
+    "main.js.map": "/ExploreExt/static/js/main.b2146eca.chunk.js.map",
     "runtime-main.js": "/ExploreExt/static/js/runtime-main.8f7275ef.js",
     "runtime-main.js.map": "/ExploreExt/static/js/runtime-main.8f7275ef.js.map",
     "static/js/2.7f50d5cc.chunk.js": "/ExploreExt/static/js/2.7f50d5cc.chunk.js",
     "static/js/2.7f50d5cc.chunk.js.map": "/ExploreExt/static/js/2.7f50d5cc.chunk.js.map",
     "index.html": "/ExploreExt/index.html",
-    "static/css/main.8ee3111c.chunk.css.map": "/ExploreExt/static/css/main.8ee3111c.chunk.css.map",
+    "static/css/main.c454ef6c.chunk.css.map": "/ExploreExt/static/css/main.c454ef6c.chunk.css.map",
     "static/js/2.7f50d5cc.chunk.js.LICENSE.txt": "/ExploreExt/static/js/2.7f50d5cc.chunk.js.LICENSE.txt",
     "static/media/logo.f0f8f2b8.png": "/ExploreExt/static/media/logo.f0f8f2b8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8f7275ef.js",
     "static/js/2.7f50d5cc.chunk.js",
-    "static/css/main.8ee3111c.chunk.css",
-    "static/js/main.b2a68ba2.chunk.js"
+    "static/css/main.c454ef6c.chunk.css",
+    "static/js/main.b2146eca.chunk.js"
   ]
 }
