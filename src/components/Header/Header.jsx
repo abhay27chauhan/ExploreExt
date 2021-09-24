@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import SearchIcon from '@mui/icons-material/Search';
 
 import "./Header.css";
 import CustomMenu from "../Menu/Menu";
 import CreateModal from "../CreateModal/CreateModal";
 
-function Header({ breadCrumb, tree, setTree }) {
+function Header({ breadCrumb, tree, setTree, setSearch }) {
   const [data, setData] = useState({ placeholder: "", btnText: "", type: "" });
   const [openModal, setOpenModal] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -13,6 +14,10 @@ function Header({ breadCrumb, tree, setTree }) {
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
+  const handleChange = (e) => {
+    setSearch(e.target.value)
+  }
 
   const handleClose = (e) => {
     if (e.target.outerText == "File") {
@@ -37,7 +42,10 @@ function Header({ breadCrumb, tree, setTree }) {
       <div className="breadcrumbs">{breadCrumb}</div>
       <div className="grow"></div>
       <div className="header__actions">
-        <input placeholder="Search.." className="search__input" />
+        <div className="header__search-container">
+          <input placeholder="Search.." className="search__input" onChange={handleChange} />
+          <SearchIcon />
+        </div>
         <button
           aria-controls="basic-menu"
           aria-haspopup="true"

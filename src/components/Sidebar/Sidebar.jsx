@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 import "./Sidebar.css";
 
 function Sidebar({ tree, setBreadCrumb }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const handleClick = () => {
     setOpen(true);
   };

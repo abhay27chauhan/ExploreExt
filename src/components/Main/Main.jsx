@@ -4,7 +4,7 @@ import document from '../../assets/document.png';
 import EditFile from '../EditFile/EditFile';
 import './Main.css'
 
-function Main({ tree, breadCrumb }) {
+function Main({ tree, breadCrumb, searchText }) {
     const [editFile, setEditFile] = useState(false);
     const [fileData, setFileData] = useState({});
     const [carr, setcArr] = useState([]);
@@ -30,6 +30,7 @@ function Main({ tree, breadCrumb }) {
     }, [breadCrumb, tree])
 
     let farr = carr.filter(obj => obj.type !== "folder");
+    farr = farr.filter(obj => obj.name.toLowerCase().includes(searchText.toLowerCase()));
 
     const handleClick = (file) => {
         setFileData({

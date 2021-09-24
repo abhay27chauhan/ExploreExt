@@ -10,13 +10,14 @@ import Header from './components/Header/Header';
 function App() {
   const [breadCrumb, setBreadCrumb] = useState('')
   const [tree, setTree] = useState(structure);
+  const [search, setSearch] = useState('');
 
   return (
     <div className="app">
       <Sidebar tree={tree} setBreadCrumb={setBreadCrumb} />
       <div className="container">
-        <Header breadCrumb={breadCrumb} tree={tree} setTree={setTree} />
-        <Main breadCrumb={breadCrumb} tree={tree}/>
+        <Header breadCrumb={breadCrumb} tree={tree} setTree={setTree} setSearch={setSearch} />
+        <Main breadCrumb={breadCrumb} tree={tree} searchText={search}/>
       </div>
     </div>
   );
