@@ -13,8 +13,6 @@ const Folder = ({ active, setActive, name, children, path, setBreadCrumb }) => {
     setIsOpen(!isOpen);
   };
 
-  console.log(active);
-  console.log(name);
   let additional = active == name ? `folder--label dark` : `folder--label`;
 
   return (
