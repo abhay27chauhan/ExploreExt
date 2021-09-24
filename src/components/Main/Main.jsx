@@ -27,7 +27,7 @@ function Main({ tree, breadCrumb }) {
             }
         }
         getFiles(0, barr, tree)
-    }, [breadCrumb])
+    }, [breadCrumb, tree])
 
     let farr = carr.filter(obj => obj.type !== "folder");
 
